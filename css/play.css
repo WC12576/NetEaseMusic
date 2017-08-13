@@ -81,6 +81,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    margin-top: -2.5rem;
+    margin-left: -2.5rem;
     border-radius: 50%;
     animation: circle 20s infinite linear;
     animation-play-state: paused;
