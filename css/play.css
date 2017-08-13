@@ -42,6 +42,7 @@
 }
 .disc-container .disc{
     position: relative;
+    display: -webkit-flex; 
     display: flex;
     justify-content: center;
     align-items: center;
