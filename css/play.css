@@ -78,6 +78,9 @@
 .disc-container .cover{
     width: 5rem;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     border-radius: 50%;
     animation: circle 20s infinite linear;
     animation-play-state: paused;
