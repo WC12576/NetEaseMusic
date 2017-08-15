@@ -42,14 +42,7 @@
 }
 .disc-container .disc{
     position: relative;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2.2rem;
+    height: 65vh;
 }
 .disc-container .icon-wrapper{
     position: absolute;
@@ -70,12 +63,19 @@
     fill: white;
     height: 1.5rem;
 }
-.disc-container .ring{
+.disc-container .disc .ring{
     width: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .disc-container .light{
     width: 8rem;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     animation: circle 20s infinite linear;
     animation-play-state: paused;
 }
@@ -85,8 +85,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    margin-top: -2.5rem;
-    margin-left: -2.5rem;
     border-radius: 50%;
     animation: circle 20s infinite linear;
     animation-play-state: paused;
@@ -108,14 +106,14 @@
     animation: circle 20s infinite linear; 
 }
 .song-description{
-	flex-grow: 1;
-	color: #AEABAC;
-	text-align: center;
-	margin-top: .5rem;
+    flex-grow: 1;
+    color: #AEABAC;
+    text-align: center;
+    margin-top: .5rem;
     height: .5rem;
 }
 .song-description h1{
-	color: white;
+    color: white;
     line-height: .9rem;
     font-size: .5rem;
 }
