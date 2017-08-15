@@ -76,8 +76,8 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    animation: circle 20s infinite linear;
-    animation-play-state: paused;
+    /*animation: circle 20s infinite linear;
+    animation-play-state: paused;*/
 }
 .disc-container .cover{
     width: 5rem;
@@ -86,13 +86,13 @@
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 50%;
-    animation: circle 20s infinite linear;
+    /*animation: circle 20s infinite linear;
     animation-play-state: paused;
 }
 .disc-container.playing .light,
 .disc-container.playing .cover{
     animation-play-state: running;
-}
+}*/
 .disc-container .icon-pause{
     display: none; 
 }
