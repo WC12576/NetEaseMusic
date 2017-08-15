@@ -29,7 +29,7 @@
     position: absolute;
     left: 4.5rem;
     top: -.05rem;
-    width: 3.5rem;
+    width: 3rem;
     z-index: 1;
     transition-duration: 2s ;
     transform-origin: .3rem 0;
@@ -42,7 +42,7 @@
 }
 .disc-container .disc{
     position: relative;
-    height: 65vh;
+    height: 12rem;
 }
 .disc-container .icon-wrapper{
     position: absolute;
@@ -73,18 +73,16 @@
 .disc-container .light{
     width: 8rem;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    left: 1rem;
+    top: 2rem;
     animation: circle 20s infinite linear;
     animation-play-state: paused;
 }
 .disc-container .cover{
     width: 5rem;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    top: 3.5rem;
+    left: 2.5rem;
     border-radius: 50%;
     animation: circle 20s infinite linear;
     animation-play-state: paused;
@@ -110,8 +108,7 @@
     flex-grow: 1;
     color: #AEABAC;
     text-align: center;
-    margin-top: .5rem;
-    height: .5rem;
+    margin-top: -1rem;
 }
 .song-description h1{
     color: white;
