@@ -77,7 +77,7 @@ $(function () {
         })
         $('.hotMusicLoading').remove()
     })
-    
+
     $.get('./songs.json').then(function (response) {
         //console.log(response)
         let items = response
@@ -94,51 +94,4 @@ $(function () {
             $('.hotSearch>ul').append($li)
         })
     })
-
-    let timer = undefined
-    $('#searchinput').on('input', function (e) {
-        let $input = $(e.currentTarget)
-        let value = $input.val().trim()
-        if (value !== '') {
-            $('.placeholder').css('display','none')
-        }else if (value === '') {
-            $('.placeholder').css('display','block')
-        }
-
-        if (timer) {
-            clearTimeout(timer)
-        }
-
-        timer = setTimeout(function () {
-            search(value).then((result) => {
-                timer = undefined
-                if (result.length !== 0) {
-                    $('#output').text(result.map((r) => r.name).join(','))
-                } else {
-                    $('#output').text('没有结果')
-                }
-            })
-        }, 300)
-
-
-    })
-
-    function search(keyword) {
-        console.log('搜索' + keyword)
-        return new Promise((resolve, reject) => {
-            var database = [
-                { "id": 1, "name": "那些花儿", },
-                { "id": 2, "name": "情非得已", },
-                { "id": 3, "name": "找自己", },
-            ]
-            let result = database.filter(function (item) {
-                return item.name.indexOf(keyword) >= 0
-            })
-            setTimeout(function () {
-                console.log('搜到' + keyword + '的结果')
-                resolve(result)
-            }, (Math.random() * 200 + 1000))
-        })
-    }
-    window.search = search
 })
